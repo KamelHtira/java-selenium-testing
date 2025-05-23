@@ -46,7 +46,7 @@ public void testFilterCarTypesAndManualGear() {
     OccasionPage occasionPage = new OccasionPage(this.driver);
     occasionPage.filterCarTypesAndManualGear();
 
-    Assert.assertTrue(occasionPage.getPageTitle().contains("Offre"));
+    Assert.assertTrue(occasionPage.getPageTitle().contains("Prix"));
 }
 
     @After

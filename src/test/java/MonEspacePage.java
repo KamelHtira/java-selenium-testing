@@ -15,6 +15,7 @@ public class MonEspacePage extends BasePage {
     public Boolean logout() {
         try {
             waitAndReturnElement(monEspaceMenu).click();
+            waitForFixedTime(10);
             waitAndClick(logoutLink);
             waitAndReturnElement(loginFormEmail);
             return true;

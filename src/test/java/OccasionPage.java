@@ -16,6 +16,7 @@ public class OccasionPage extends BasePage {
     private By utilitaireCheckbox = By.xpath("//input[@id='carrosserie_63']");
     private By berlineCheckbox = By.xpath("//input[@id='carrosserie_58']");
     private By coupeCheckbox = By.xpath("//input[@id='carrosserie_59']");
+    private By submitButton = By.xpath("//button[@type='submit']");
 
     public OccasionPage(WebDriver driver) {
         super(driver);
@@ -37,6 +38,7 @@ public class OccasionPage extends BasePage {
         waitAndReturnElement(berlineCheckbox).click();
         waitAndReturnElement(coupeCheckbox).click();
 
+        waitAndReturnElement(submitButton).click();
         waitForFixedTime(10);  // optional fixed wait, can be adjusted or removed
     }
 
